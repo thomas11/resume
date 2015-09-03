@@ -1,0 +1,107 @@
+%%
+%% Created with currvita by Axel Reichert.
+%%
+%\documentclass[10pt,DIV9,smallheadings]{scrartcl}
+\documentclass[10pt,DIV13]{scrartcl}
+% \documentclass[10pt,DIV9]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[TextAligned]{currvita}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{url}
+\newcommand*{\ac}[1]{\mbox{#1}}
+
+\usepackage{varwidth}
+
+\usepackage{color}\definecolor{darkblue}{rgb}{0.1,0.1,0.1}
+\usepackage[colorlinks=false,
+            %urlcolor=black,
+            urlbordercolor={0.5 0.5 0.5},
+            pdfborderstyle={/S/U/W 0.1}]{hyperref}
+\urlstyle{same}
+
+\usepackage[english,ngerman]{babel}
+
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{10mm}{10mm} % start everything near the top-left corner
+
+% Will Robertson's fontspec.sty can be used to simplify font choices. 
+% To experiment, open /Applications/Font Book to examine the fonts 
+% provided on Mac OS X, and change "Zapfino" to any of these choices. 
+\usepackage{fontspec,xltxtra,xunicode} 
+\defaultfontfeatures{Mapping=tex-text} 
+\setromanfont[Mapping=tex-text]{Georgia} 
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Georgia} 
+\setmonofont[Scale=MatchLowercase]{Andale Mono} 
+
+\setlength{\itemsep}{2cm}
+  % 1\baselineskip plus 2pt minus 2pt%
+% }%
+
+
+\graphicspath{{Scans/}}
+
+\begin{document}
+\urlstyle{same}
+
+% Left indent of the list items.
+\setlength{\cvlabelwidth}{0mm}
+
+\include{cv}
+
+% Diplomzeugnis + Übersetzung
+% \pagebreak
+% \include{DiplomZeugnis}
+% \pagebreak
+% \pagestyle{empty}
+% \begin{figure}
+% \vspace*{-3.3cm}
+% \hspace{-1in}\hspace{-\oddsidemargin}
+% \includegraphics{DiplomzeugnisHinten-klein}  
+% \end{figure}
+
+% \pagebreak
+% \pagestyle{empty}
+% \begin{figure}
+% \vspace*{-3.3cm}
+% \hspace{-1in}\hspace{-\oddsidemargin}
+% \includegraphics{Vordiplom-klein}  
+% \end{figure}
+
+% \pagebreak
+% \pagestyle{empty}
+% \begin{figure}
+% \vspace*{-3.3cm}
+% \hspace{-1in}\hspace{-\oddsidemargin}
+% \includegraphics{Abizeugnis1-klein}  
+% \end{figure}
+
+% \pagebreak
+% \pagestyle{empty}
+% \begin{figure}
+% \vspace*{-3.3cm}
+% \hspace{-1in}\hspace{-\oddsidemargin}
+% \includegraphics{Abizeugnis2-klein}  
+% \end{figure}
+
+% % ZKM Arbeitszeugnis + Übersetzung
+% \pagebreak
+% \include{ZKMZeugnis}
+% \pagebreak
+% \pagestyle{empty}
+% \begin{figure}
+% \vspace*{-3.3cm}
+% \hspace{-1in}\hspace{-\oddsidemargin}
+% \includegraphics{ZKMZeugnis-klein}  
+% \end{figure}
+
+\end{document}
+\endinput
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

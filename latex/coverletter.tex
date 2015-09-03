@@ -1,0 +1,59 @@
+\documentclass[paper=a4,fromphone=true,fromemail=true,foldmarks=false,
+backaddress=false,fontsize=12pt,fromalign=left,addrfield=off,
+myletter]{scrlttr2}
+\usepackage[english]{babel}
+
+\setkomavar{fromname}{Thomas Kappler}
+\setkomavar{fromaddress}{Forchstrasse 331\\
+  CH-8008 Zürich}
+\setkomavar{fromphone}{+41 76 295 81 18}
+\setkomavar{fromemail}{tkappler@gmail.com}
+
+\setkomavar{signature}{Thomas Kappler}
+\setkomavar{place}{Zürich}
+
+%\setkomavar{firstfoot}{off}
+
+% Will Robertson's fontspec.sty can be used to simplify font choices. 
+% To experiment, open /Applications/Font Book to examine the fonts 
+% provided on Mac OS X, and change "Zapfino" to any of these choices. 
+\usepackage{fontspec,xltxtra,xunicode} 
+\defaultfontfeatures{Mapping=tex-text} 
+\setromanfont[Mapping=tex-text]{Georgia} 
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Georgia} 
+\setmonofont[Scale=MatchLowercase]{Andale Mono} 
+
+
+\begin{document}
+
+\begin{letter}{TODO}
+
+\setkomavar{subject}{Application Software Development Engineer - Platform}
+
+\opening{Dear Mr. Gautschi,}
+
+thank you for our recent conversation about the opening of Software
+Development Engineer - Platform.
+
+I believe I could be a great fit for this role. My software
+engineering and Java skills combined with experience in data
+processing, natural language processing, and concurrent algorithms
+would fit well for the challenges of the rapid growth of the Netbreeze
+division of Microsoft. I am excited at the prospect of being part of
+this team.
+
+\closing{Best regards,}
+
+\encl{Resume\\Letters of reference\\Diplomzeugnis}
+
+\end{letter}
+\end{document}
+
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
